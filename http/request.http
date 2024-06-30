@@ -1,0 +1,30 @@
+@api = http://localhost:8080/api
+
+###
+GET {{api}}/task
+
+###
+GET {{api}}/task/1
+
+
+####
+POST {{api}}/task
+Content-Type: application/json
+
+{
+    "title": "Espanol",
+    "description": "Leer un poema"
+}
+
+####
+PUT {{api}}/task/5
+Content-Type: application/json
+
+{
+    "title": "Biologia",
+    "description": "Dibujar una celula"
+}
+
+
+####
+DELETE {{api}}/task/2
